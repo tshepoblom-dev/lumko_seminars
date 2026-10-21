@@ -45,6 +45,10 @@ class E2eSeedCommand extends Command
         // Agora as the provider, so the host console and the player's real
         // "join" state exist to be scanned (no credentials: nothing connects).
         $event->update(['livestream_provider' => 'agora', 'livestream_channel_name' => 'e2e-channel']);
+        // The browser suite registers online in several specs; the live
+        // event is in person only. zy-in-person-only.spec turns this off
+        // and back on again.
+        $event->update(['offers_online' => true]);
         $admin = User::where('email', 'admin@lumko.cloud')->firstOrFail();
         $consents = app(ConsentService::class);
 

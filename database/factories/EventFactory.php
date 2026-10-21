@@ -24,6 +24,9 @@ class EventFactory extends Factory
             'ends_at' => now()->addWeek()->addHours(2),
             'online_price' => 0,
             'in_person_price' => 150,
+            // Online offered, so tests can register either way; the
+            // database default (off) is tested in InPersonOnlyTest.
+            'offers_online' => true,
             'status' => 'draft',
         ];
     }

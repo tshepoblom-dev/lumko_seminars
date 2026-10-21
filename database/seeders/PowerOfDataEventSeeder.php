@@ -26,6 +26,8 @@ class PowerOfDataEventSeeder extends Seeder
                 'ends_at' => $eventDate->copy()->setTime(9, 20),
                 'online_price' => 0,
                 'in_person_price' => 200,
+                // In person only; recorded and released afterwards (2026-10-21).
+                'offers_online' => false,
                 'status' => 'published',
             ]
         );

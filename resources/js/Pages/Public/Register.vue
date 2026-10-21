@@ -60,8 +60,8 @@ const form = useForm({
     referral_source: '',
     referral_partner_id: null,
     share_with_partner: false,
-    // An in-person-only event has one choice (event.offers_online).
-    attendance_mode: props.event.offers_online === false ? 'in_person' : 'online',
+    // Online is a choice only when the event explicitly offers it.
+    attendance_mode: props.event.offers_online === true ? 'online' : 'in_person',
     voucher_code: '',
     // question id → answer
     answers: Object.fromEntries(props.questionPages.flatMap((p) => p.questions).map((q) => [q.id, blankAnswer(q)])),
@@ -120,7 +120,7 @@ function loadDraft() {
 onMounted(() => {
     loadDraft();
     // A draft saved while online was still offered can't bring it back.
-    if (props.event.offers_online === false) form.attendance_mode = 'in_person';
+    if (props.event.offers_online !== true) form.attendance_mode = 'in_person';
     // After the draft, so an earlier "Online" draft can't undo an invitation link.
     if (props.prefillVoucherCode) {
         form.voucher_code = props.prefillVoucherCode;
@@ -502,7 +502,7 @@ const reviewRows = computed(() => [
 
                 <fieldset v-if="!showReview && currentStep === 3" class="space-y-3">
                     <legend class="step-legend">3. How will you attend?</legend>
-                    <label v-if="event.offers_online !== false" class="choice">
+                    <label v-if="event.offers_online === true" class="choice">
                         <input v-model="form.attendance_mode" type="radio" value="online" />
                         <span class="flex-1">
                             <span class="flex items-baseline justify-between gap-4">
@@ -526,7 +526,7 @@ const reviewRows = computed(() => [
                             </span>
                         </span>
                     </label>
-                    <p v-if="event.offers_online === false" class="text-sm text-ink-600">
+                    <p v-if="event.offers_online !== true" class="text-sm text-ink-600">
                         This event is in person only. The session is recorded, and the recording will be shared after the event.
                     </p>
                     <p v-if="stepErrors.attendance_mode" class="field-error">{{ stepErrors.attendance_mode[0] }}</p>

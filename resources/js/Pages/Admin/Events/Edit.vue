@@ -19,7 +19,7 @@ const form = useForm({
     ends_at: toLocalInput(props.event.ends_at),
     online_price: props.event.online_price,
     in_person_price: props.event.in_person_price,
-    offers_online: props.event.offers_online ?? true,
+    offers_online: props.event.offers_online === true,
     status: props.event.status,
     hero_image: null,
     hero_image_alt: props.event.hero_image_alt ?? '',
@@ -105,7 +105,7 @@ function saveLivestream() {
                             Offer online attendance
                         </label>
                         <p id="admin-events-edit-online-hint" class="mt-1 text-xs text-gray-600">
-                            Off: registration offers in person only and the site doesn't mention online. People already registered online keep their registration and can switch to in person from their dashboard.
+                            Tick to let people register to attend online. Unticked, registration offers in person only and the site doesn't mention online; people already registered online keep their registration and can switch to in person from their dashboard.
                         </p>
                     </div>
                     <div class="grid grid-cols-3 gap-4">

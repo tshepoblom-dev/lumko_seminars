@@ -24,8 +24,9 @@ const date = computed(() => (props.event ? dateParts(props.event.starts_at) : nu
 const directions = computed(() => (props.event ? mapsUrl(props.event.venue_name, props.event.venue_address) : null));
 const inPersonPrice = computed(() => (props.event ? rand(props.event.in_person_price) : ''));
 const onlinePrice = computed(() => (props.event ? rand(props.event.online_price) : ''));
-// An in-person-only event never mentions online (event settings).
-const onlineOffered = computed(() => props.event?.offers_online !== false);
+// Online only when the event explicitly offers it (event settings); a
+// missing value means in person only.
+const onlineOffered = computed(() => props.event?.offers_online === true);
 
 const initials = (name) => name
     .replace(/^(Dr|Prof|Mr|Mrs|Ms|Adv)\.?\s+/i, '')

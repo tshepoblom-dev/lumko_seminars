@@ -68,6 +68,23 @@ class InPersonOnlyTest extends TestCase
         $this->assertTrue($event->fresh()->offersOnline());
     }
 
+    public function test_an_event_is_in_person_only_unless_online_is_turned_on(): void
+    {
+        // Created without the field (as the migration leaves existing events).
+        $event = Event::create([
+            'name' => 'Plain', 'slug' => 'plain', 'status' => 'published',
+            'starts_at' => now()->addWeek(), 'ends_at' => now()->addWeek()->addHours(2),
+            'online_price' => 0, 'in_person_price' => 200,
+        ]);
+
+        $this->assertFalse($event->offersOnline()); // not yet reloaded: no value
+        $this->assertFalse($event->fresh()->offersOnline()); // the database default
+        $this->assertFalse((new Event(['offers_online' => null]))->offersOnline());
+
+        $this->get(route('home'))->assertInertia(fn (Assert $page) => $page->where('event.offers_online', false));
+        $this->postJson(route('event.register.validate-step'), ['step' => 3, 'attendance_mode' => 'online'])->assertStatus(422);
+    }
+
     public function test_registration_refuses_online_when_the_event_is_in_person_only(): void
     {
         Notification::fake();

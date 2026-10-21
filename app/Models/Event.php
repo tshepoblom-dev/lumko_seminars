@@ -62,13 +62,14 @@ class Event extends Model
     }
 
     /**
-     * Whether people can register to attend online. A model created in
-     * code and not yet reloaded has no value until the database default
-     * (on) is read back, so a missing value counts as on.
+     * Whether people can register to attend online. Only an explicit "on"
+     * counts: a missing value (a model not yet reloaded, or a database
+     * without the column) and null both mean in person only, matching the
+     * column's default (off).
      */
     public function offersOnline(): bool
     {
-        return $this->offers_online ?? true;
+        return $this->offers_online === true;
     }
 
     /**

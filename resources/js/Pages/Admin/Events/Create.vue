@@ -14,7 +14,7 @@ const form = useForm({
     ends_at: '',
     online_price: 0,
     in_person_price: 0,
-    offers_online: true,
+    offers_online: false,
     status: 'draft',
     hero_image: null,
     hero_image_alt: '',
@@ -84,7 +84,7 @@ function submit() {
                             Offer online attendance
                         </label>
                         <p id="admin-events-create-online-hint" class="mt-1 text-xs text-gray-600">
-                            Off: registration offers in person only and the site doesn't mention online.
+                            Tick to let people register to attend online. Unticked, registration offers in person only and the site doesn't mention online.
                         </p>
                     </div>
                     <div class="grid grid-cols-3 gap-4">
