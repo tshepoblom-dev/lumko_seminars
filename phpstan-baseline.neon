@@ -1,0 +1,1159 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Offset 0 on non\-empty\-list\<string\> on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
+			count: 1
+			path: app/Console/Commands/CreateAdminCommand.php
+
+		-
+			message: '#^Relation ''registrations'' is not found in App\\Models\\User model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Console/Commands/PublishAnnouncementsCommand.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Payment\:\:\$registration\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Console/Commands/PurgePaymentProofsCommand.php
+
+		-
+			message: '#^Relation ''registration'' is not found in App\\Models\\Payment model\.$#'
+			identifier: larastan.relationExistence
+			count: 2
+			path: app/Console/Commands/PurgePaymentProofsCommand.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Resource\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Console/Commands/ReleaseResourcesCommand.php
+
+		-
+			message: '#^Relation ''event'' is not found in App\\Models\\Resource model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Console/Commands/ReleaseResourcesCommand.php
+
+		-
+			message: '#^Relation ''registrations'' is not found in App\\Models\\User model\.$#'
+			identifier: larastan.relationExistence
+			count: 2
+			path: app/Console/Commands/ReleaseResourcesCommand.php
+
+		-
+			message: '#^Cannot call method isFuture\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Console/Commands/SendPostEventCommand.php
+
+		-
+			message: '#^Relation ''registrations'' is not found in App\\Models\\User model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Console/Commands/SendPostEventCommand.php
+
+		-
+			message: '#^Cannot call method copy\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Console/Commands/SendRemindersCommand.php
+
+		-
+			message: '#^Relation ''registrations'' is not found in App\\Models\\User model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Console/Commands/SendRemindersCommand.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Poll\:\:\$options\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Events/PollUpdated.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: app/Events/PollUpdated.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Question\:\:\$user\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Events/QuestionSubmittedForModeration.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 3
+			path: app/Events/QuestionUpdated.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Event\:\:\$currentSession\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Events/SessionStateUpdated.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/AnnouncementController.php
+
+		-
+			message: '#^Cannot call method isFuture\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/AnnouncementController.php
+
+		-
+			message: '#^Relation ''event'' is not found in App\\Models\\Announcement model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/AnnouncementController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$payment\.$#'
+			identifier: property.notFound
+			count: 3
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$ticket\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$user\.$#'
+			identifier: property.notFound
+			count: 4
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Cannot call method label\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\ConsentRecord\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Pagination\\AbstractPaginator\<int,App\\Models\\EventRegistration\>\:\:through\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Relation ''payment'' is not found in App\\Models\\EventRegistration model\.$#'
+			identifier: larastan.relationExistence
+			count: 3
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Relation ''poll'' is not found in App\\Models\\PollResponse model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Relation ''question'' is not found in App\\Models\\QuestionVote model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Relation ''resource'' is not found in App\\Models\\ResourceView model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Relation ''ticket'' is not found in App\\Models\\EventRegistration model\.$#'
+			identifier: larastan.relationExistence
+			count: 3
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Relation ''user'' is not found in App\\Models\\EventRegistration model\.$#'
+			identifier: larastan.relationExistence
+			count: 6
+			path: app/Http/Controllers/Admin/AttendeeController.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/AuditController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Pagination\\AbstractPaginator\<int,App\\Models\\AuditLog\>\:\:through\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/AuditController.php
+
+		-
+			message: '#^Relation ''actor'' is not found in App\\Models\\AuditLog model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/AuditController.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Admin/AuditController.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, App\\Models\\Event\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Admin/CheckInController.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>id" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Admin/DashboardController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Feedback\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/FeedbackController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Feedback\:\:\$user\.$#'
+			identifier: property.notFound
+			count: 4
+			path: app/Http/Controllers/Admin/FeedbackController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<App\\Models\\Feedback\>\:\:visibleTo\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/FeedbackController.php
+
+		-
+			message: '#^Relation ''event'' is not found in App\\Models\\Feedback model\.$#'
+			identifier: larastan.relationExistence
+			count: 2
+			path: app/Http/Controllers/Admin/FeedbackController.php
+
+		-
+			message: '#^Relation ''user'' is not found in App\\Models\\Feedback model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/FeedbackController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: app/Http/Controllers/Admin/LiveBroadcastController.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, string\|null given\.$#'
+			identifier: argument.type
+			count: 2
+			path: app/Http/Controllers/Admin/LiveBroadcastController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Event\:\:\$programmeSessions\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/LiveControlController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/LiveControlController.php
+
+		-
+			message: '#^Relation ''currentSession'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/LiveControlController.php
+
+		-
+			message: '#^Relation ''programmeSessions'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/LiveControlController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Payment\:\:\$registration\.$#'
+			identifier: property.notFound
+			count: 6
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Payment\:\:\$statusHistory\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Cannot call method label\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Payment\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Relation ''registration'' is not found in App\\Models\\Payment model\.$#'
+			identifier: larastan.relationExistence
+			count: 3
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Relation ''statusHistory'' is not found in App\\Models\\Payment model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Admin/PaymentController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Poll\:\:\$options\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/PollController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/PollController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Poll\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/PollController.php
+
+		-
+			message: '#^Relation ''options'' is not found in App\\Models\\Poll model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/PollController.php
+
+		-
+			message: '#^Relation ''event'' is not found in App\\Models\\ProgrammeSession model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/ProgrammeSessionController.php
+
+		-
+			message: '#^Relation ''speaker'' is not found in App\\Models\\ProgrammeSession model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/ProgrammeSessionController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Question\:\:\$user\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/QuestionController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Question\:\:\$votes_count\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/QuestionController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/QuestionController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Question\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/QuestionController.php
+
+		-
+			message: '#^Relation ''user'' is not found in App\\Models\\Question model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/QuestionController.php
+
+		-
+			message: '#^Relation ''votes'' is not found in App\\Models\\Question model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/QuestionController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Resource\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/ResourceController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Resource\:\:\$views_count\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/ResourceController.php
+
+		-
+			message: '#^Cannot call method label\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Admin/ResourceController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Resource\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/ResourceController.php
+
+		-
+			message: '#^Relation ''event'' is not found in App\\Models\\Resource model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/ResourceController.php
+
+		-
+			message: '#^Relation ''views'' is not found in App\\Models\\Resource model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Admin/ResourceController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/AgoraTokenController.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, string\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Public/AgoraTokenController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Public/FeedbackController.php
+
+		-
+			message: '#^Cannot call method copy\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/FeedbackController.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/FeedbackController.php
+
+		-
+			message: '#^Cannot call method isFuture\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/FeedbackController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Event\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/FeedbackController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Event\:\:\$programmeSessions\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/Public/HomeController.php
+
+		-
+			message: '#^Cannot call method isPast\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/HomeController.php
+
+		-
+			message: '#^Cannot call method toIso8601String\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Http/Controllers/Public/HomeController.php
+
+		-
+			message: '#^Relation ''programmeSessions'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/HomeController.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type string\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Public/HomeController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Event\:\:\$currentSession\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Public/LiveController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Poll\:\:\$options\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Public/LiveController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 3
+			path: app/Http/Controllers/Public/LiveController.php
+
+		-
+			message: '#^Cannot call method isPast\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/LiveController.php
+
+		-
+			message: '#^Relation ''options'' is not found in App\\Models\\Poll model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/LiveController.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type string\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/Public/LiveController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Connection\:\:\$recipient\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Connection\:\:\$requester\.$#'
+			identifier: property.notFound
+			count: 5
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 3
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$user\.$#'
+			identifier: property.notFound
+			count: 5
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Call to function abort_unless\(\) with arguments false, 422 and ''This connection is…'' will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Call to function abort_unless\(\) with arguments false, 422 and ''This request is no…'' will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 3
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Cannot call method label\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, App\\Models\\EventRegistration\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Connection\>\:\:mapWithKeys\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\EventRegistration\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<\(int\|string\),mixed\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Relation ''recipient'' is not found in App\\Models\\Connection model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Relation ''requester'' is not found in App\\Models\\Connection model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Relation ''user'' is not found in App\\Models\\EventRegistration model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and App\\Enums\\ConnectionStatus\:\:Accepted will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 2
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and App\\Enums\\ConnectionStatus\:\:Pending will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 4
+			path: app/Http/Controllers/Public/NetworkingController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/PollController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Connection\:\:\$recipient\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Connection\:\:\$requester\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PollResponse\:\:\$option\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Cannot call method toIso8601String\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Connection\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\ConsentRecord\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Question\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Relation ''option'' is not found in App\\Models\\PollResponse model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Relation ''recipient'' is not found in App\\Models\\Connection model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Relation ''requester'' is not found in App\\Models\\Connection model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Http/Controllers/Public/PreferencesController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 2
+			path: app/Http/Controllers/Public/QuestionController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/RegistrationController.php
+
+		-
+			message: '#^Cannot call method isPast\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Http/Controllers/Public/RegistrationController.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, App\\Models\\Event\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Public/RegistrationController.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type string\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 2
+			path: app/Http/Controllers/Public/RegistrationController.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/ResourceController.php
+
+		-
+			message: '#^Cannot call method label\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/Public/ResourceController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Models\\Resource\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Public/ResourceController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Feedback\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Middleware/EnsureEventAttendee.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Poll\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Middleware/EnsureEventAttendee.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PollOption\:\:\$poll\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Middleware/EnsureEventAttendee.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Question\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Middleware/EnsureEventAttendee.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Resource\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Middleware/EnsureEventAttendee.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, App\\Models\\Event\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Middleware/EnsureEventAttendee.php
+
+		-
+			message: '#^Parameter \#1 \$boolean of function abort_unless expects bool, App\\Models\\User\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Middleware/EnsureEventAttendee.php
+
+		-
+			message: '#^Method App\\Http\\Middleware\\SecurityHeaders\:\:handle\(\) should return Symfony\\Component\\HttpFoundation\\Response but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Middleware/SecurityHeaders.php
+
+		-
+			message: '#^Cannot call method isFuture\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Models/Event.php
+
+		-
+			message: '#^Cannot call method subMinutes\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Models/Event.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type string\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 2
+			path: app/Models/Event.php
+
+		-
+			message: '#^Cannot call method lte\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: app/Models/Resource.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type string\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Models/Resource.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Announcement\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Notifications/AnnouncementNotification.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Notifications/AnnouncementPublished.php
+
+		-
+			message: '#^Trait App\\Notifications\\Concerns\\GuardsMarketingConsent is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: app/Notifications/Concerns/GuardsMarketingConsent.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Notifications/ConnectionAccepted.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Notifications/ConnectionRequested.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Notifications/EventReminder1h.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Notifications/EventReminder24h.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: app/Notifications/RegistrationConfirmed.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Notifications/RegistrationConfirmed.php
+
+		-
+			message: '#^Cannot call method label\(\) on string\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Notifications/RegistrationConfirmed.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/AnnouncementPolicy.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\CheckIn\:\:\$ticket\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Policies/CheckInPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/CheckInPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/ConnectionPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/EventPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/EventRegistrationPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/FeedbackPolicy.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Payment\:\:\$registration\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Policies/PaymentPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/PaymentPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/PollPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/ProgrammeSessionPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/QuestionPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/ResourcePolicy.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Ticket\:\:\$registration\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Policies/TicketPolicy.php
+
+		-
+			message: '#^Relation ''managers'' is not found in App\\Models\\Event model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Policies/TicketPolicy.php
+
+		-
+			message: '#^Relation ''registrations'' is not found in App\\Models\\User model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Services/AnnouncementMailer.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Ticket\:\:\$registration\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Services/CheckInService.php
+
+		-
+			message: '#^Relation ''checkIn'' is not found in App\\Models\\Ticket model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Services/CheckInService.php
+
+		-
+			message: '#^Relation ''registration'' is not found in App\\Models\\Ticket model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Services/CheckInService.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between string and App\\Enums\\TicketStatus\:\:Confirmed will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 1
+			path: app/Services/CheckInService.php
+
+		-
+			message: '#^Unreachable statement \- code above always terminates\.$#'
+			identifier: deadCode.unreachable
+			count: 1
+			path: app/Services/CheckInService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Payment\:\:\$count\.$#'
+			identifier: property.notFound
+			count: 5
+			path: app/Services/EventStatsService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Payment\:\:\$total\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Services/EventStatsService.php
+
+		-
+			message: '#^Relation ''poll'' is not found in App\\Models\\PollResponse model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Services/EventStatsService.php
+
+		-
+			message: '#^Relation ''resource'' is not found in App\\Models\\ResourceView model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Services/EventStatsService.php
+
+		-
+			message: '#^Relation ''ticket'' is not found in App\\Models\\CheckIn model\.$#'
+			identifier: larastan.relationExistence
+			count: 1
+			path: app/Services/EventStatsService.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>count" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 5
+			path: app/Services/EventStatsService.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>total" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Services/EventStatsService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Payment\:\:\$registration\.$#'
+			identifier: property.notFound
+			count: 9
+			path: app/Services/PaymentService.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			identifier: property.nonObject
+			count: 4
+			path: app/Services/PaymentService.php
+
+		-
+			message: '#^Parameter \#1 \$from of method App\\Services\\PaymentService\:\:assertTransition\(\) expects App\\Enums\\PaymentStatus, string given\.$#'
+			identifier: argument.type
+			count: 4
+			path: app/Services/PaymentService.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and App\\Enums\\PaymentStatus\:\:Approved will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Services/PaymentService.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Support/Audit.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$role\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Support/Audit.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Support/EventResolver.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$event\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Support/JourneyBuilder.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$payment\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Support/JourneyBuilder.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\EventRegistration\:\:\$ticket\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Support/JourneyBuilder.php
+
+		-
+			message: '#^If condition is always false\.$#'
+			identifier: if.alwaysFalse
+			count: 1
+			path: app/Support/JourneyBuilder.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between string and App\\Enums\\AttendanceMode\:\:InPerson will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Support/JourneyBuilder.php
